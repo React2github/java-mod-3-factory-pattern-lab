@@ -4,7 +4,7 @@ public abstract class Camera {
     private ShutterOperations shutterOps;
     private MirrorOperations mirrorOps;
 
-    private Camera(FilmOperations filmOps, ShutterOperations shutterOps, MirrorOperations mirrorOps) {
+    protected Camera(FilmOperations filmOps, ShutterOperations shutterOps, MirrorOperations mirrorOps) {
         this.filmOps = filmOps;
         this.shutterOps = shutterOps;
         this.mirrorOps = mirrorOps;
