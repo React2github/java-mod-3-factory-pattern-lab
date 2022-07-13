@@ -13,8 +13,9 @@ public class Logger {
         return logger;
     }
 
-    public void log(String message) {
+    public String log(String message) {
         currentLine++;
         System.out.println(currentLine + "::" + message);
+        return message;
     }
 }
